@@ -1,0 +1,359 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: sofia;
+    background: rgba(0,0,0,0.8);
+}
+
+.container{
+    position:relative;
+    width:100%;
+    min-height:100vh;
+    overflow: hidden;
+    
+}
+
+.container::before{
+    content: " ";
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    border-radius: 50%;
+    background: linear-gradient(-45deg,rgb(240, 111, 111),rgb(241, 241, 123));
+    top: -10%;
+    right:48%;
+    transform: translateY(-50%);
+    z-index: 6;
+    transition: 1.6s ease-in-out;
+}
+
+#register-form{
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
+    z-index: 4;
+    width:0%;
+    overflow: hidden;
+    transition: 1.2s ease-in-out;
+    padding-top: 60px;
+}
+#login-form{
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: relative;
+    z-index: 4;
+    width: 100%;
+    overflow: hidden;
+    transition: 1.2s ;
+    padding-top: 60px;
+}
+
+#btn1-2-2,#btn2-2-2{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+form,#btn1-2-2,#btn2-2-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-title{
+    font-size: 2.2rem;
+    color:#aaa;
+    margin-bottom:10px;
+}
+
+.input-container{
+    max-width: 380px;
+    width: 100%;
+    height: 55px;
+    background-color: rgba(0,0,0,0.8);
+    margin: 5px 0;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0;
+}
+
+.input-container i{
+    text-align: center;
+    line-height: 55px;
+    color:#aaa;
+    font-size: 1.1rem;
+}
+
+.input-container input{
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #aaa;
+    border-radius: 55px;
+    padding-left: 10px;
+}
+
+.input-container input::placeholder{
+    color: #aaa;
+    font-weight: 500;
+}
+
+.btn{
+    width:  150px;
+    height: 49px;
+    outline: none;
+    cursor:pointer;
+    border:2px solid transparent;
+    border-radius: 49px;
+    background:  linear-gradient(rgba(0, 0, 0, 0.9),rgba(0,0,0,0.9)),radial-gradient(circle at top left,rgb(240, 111, 111),rgb(241, 241, 123));
+    background-origin: border-box;
+    background-clip: content-box,border-box;
+    color: #aaa;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 5px 0;
+    transition: 0.5s;
+}
+
+
+.btn:hover{
+    background: linear-gradient(to right,rgb(240, 111, 111),rgb(241, 241, 123));
+    color: rgba(0,0,0,0.8);
+    border:none;
+}
+
+.social-text{
+    padding: 0.7rem 0;
+    font-size: 1rem;
+    color: #aaa;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon{
+    height: 46px;
+    width: 46px;
+    margin: 0 0.45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    border:2px solid transparent;
+    background:  linear-gradient(rgba(0, 0, 0, 0.9),rgba(0,0,0,0.9)),radial-gradient(circle at top left,rgb(240, 111, 111),rgb(241, 241, 123));
+    background-origin: border-box;
+    background-clip: content-box,border-box;
+    color:#aaa;
+    transition: 0.3s;
+}
+
+.social-icon:hover{
+    background: linear-gradient(to right,rgb(240, 111, 111),rgb(241, 241, 123));
+    color: rgba(0,0,0,0.8);
+    border:none;
+}
+
+.top-nav{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+
+.top-navlink{
+    display: inline-flex;
+    margin:5px;
+}
+
+.navlink{
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.links{
+    text-decoration: none;
+    color: rgb(248, 49, 35);
+}
+
+.links:hover{
+    color: rgb(248, 234, 35);
+}
+
+.hero-img{
+    width: 100%;
+}
+
+.container.signup-mode:before{
+    transform: translate(100%,-50%);
+    right: 52%;
+}
+.text-point{
+    cursor: pointer;
+}
+.leftsvg-div{
+    width: 70%;
+    margin-top: 60px;
+    margin-left: 25%;
+}
+.rightsvg-div{
+    width: 70%;
+    margin-top: 60px;
+    margin-right: 240px;
+}
+
+@media screen and (min-width:801px){
+    .leftpanel{
+        position: fixed;
+        top: 0px;
+        right: 50%;
+        width: 50%;
+        height:100%;
+        z-index: 7;
+        overflow: hidden;
+        transition: 1.6s ease-in-out;
+    }
+    .rightpanel{
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        width: 0%;
+        height:100%;
+        z-index: 7;
+        overflow: hidden;
+        transition: 1.6s ease-in-out;
+    }
+    #form1{
+        position: absolute;
+        width:50%;
+        height: 100%;
+        right:0;
+        top: 0;
+        
+    }
+    #form2{
+        position: absolute;
+        width:50%;
+        height: 100%;
+        left:0;
+        top: 0;
+    }
+}
+
+@media screen and (max-width:800px){
+    .leftsvg-div{
+        width: 40%;
+        margin-top: -15%;
+        margin-left: 50%;
+    }
+    .rightsvg-div{
+        width: 40%;
+        margin-top: -35%;
+        margin-left: 55%;
+    }
+    .btn2-2{
+        width: 60%;
+        margin-top: 95px;
+        margin-right: 35%;
+    }
+    .btn1-2{
+        width: 60%;
+        margin-top: 20px;
+        margin-right: 35%;
+    }
+    .container::before{
+        width: 1500px;
+        height: 1500px;
+        left: 30%;
+        bottom: 80%;
+        transform: translateX(-50%);
+        right: initial;
+        top: initial;
+        transition: 2s ease-in-out;
+    }
+    .leftpanel{
+        position: fixed;
+        top: 0;
+        left: 20%;
+        width: 50%;
+        height:30%;
+        z-index: 7;
+        overflow: hidden;
+        transition: 1.6s ease-in-out;
+    }
+    .rightpanel{
+        position: fixed;
+        bottom: 0;
+        width: 0%;
+        height:30%;
+        right: 20%;
+        z-index: 7;
+        overflow: hidden;
+        transition: 1.6s ease-in-out;
+    }
+    #form1{
+        position: absolute;
+        width:100%;
+        height: 100%;
+        right:0;
+        top: 0;
+        
+    }
+    #form2{
+        position: absolute;
+        width:100%;
+        height: 100%;
+        left:0;
+        top: -15%;
+    }
+    .input-container{
+        width: 90%;
+        margin: 2px 0;
+    }
+    .btn{
+        width: 110px;
+        height: 40px;
+    }
+    .social-icon{
+        height: 40px;
+        width: 40px;
+    }
+    .container.signup-mode:before{
+        transform: translate(-50%, 100%);
+        bottom: 22%;
+        right: initial;
+    }
+
+    
+}
+@media screen and (max-width:500px){
+    .leftsvg-div,.rightsvg-div{
+        display: none;
+    }
+    .leftpanel{
+        left: 24%;
+    }
+    .rightpanel{
+        right: 24%;
+    }
+    .btn2-2{
+        margin-top: 70px;
+        width: 100%;
+    }
+    .btn1-2{
+        width: 100%;
+    }
+}

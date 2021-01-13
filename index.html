@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="forms-container" id="form1">
+                <form action="#" method="POST" id="login-form">
+                    <h2 class="form-title text-point">Sign In</h2>
+                    <div class="input-container">
+                        <i class="fa fa-user"></i>
+                        <input type="text" name="username" id="username" placeholder="Username">
+                    </div>
+                    <div class="input-container">
+                        <i class="fa fa-key"></i>
+                        <input type="password" name="password" id="password" placeholder="Password">
+                    </div>
+                    <div class="login-btn">
+                        <input type="submit" value="continue" class="btn">
+                    </div>
+                    <p class="social-text text-point">Or sign in with social platform.</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                    
+                </form>
+        </div>
+        <div class="forms-container" id="form2">
+            <form action="#" method="POST" id="register-form">
+                <h2 class="form-title text-point">Sign Up</h2>
+                <div class="input-container">
+                    <i class="fa fa-user"></i>
+                    <input type="text" name="username" id="username" placeholder="Username">
+                </div>
+                <div class="input-container">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="input-container">
+                    <i class="fa fa-key"></i>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                </div>
+                <div class="input-container">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" name="confirmation" id="confirmation" placeholder="Password">
+                </div>
+                <div class="login-btn">
+                    <input type="submit" value="continue" class="btn">
+                </div>
+                <p class="social-text text-point">Or sign up with social platform.</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fa fa-google"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </div>
+                
+            </form>
+    </div>
+    </div>
+    <div class="panel-container">
+        <div class="leftpanel">
+            <div class="login-btn btn1-2" id="btn1-2-2">
+                <p class="text-point">Not a member</p>
+                <input type="button" value="Sign Up" class="btn" id="btn1-2">
+            </div>
+            <div class="leftsvg-div">
+                <img class="hero-img" src="login.svg">
+            </div>
+        </div>
+        <div class="rightpanel">
+            <div class="login-btn btn2-2" id="btn2-2-2">
+                <p class="text-point">A member</p>
+                <input type="button" value="Sign In" class="btn" id="btn2-2">
+            </div>
+            <div class="rightsvg-div">
+                <img class="hero-img" src="signin.svg">
+            </div>
+        </div>
+    </div>
+    <script src="home.js">
+    </script>
+    
+    {% endif %}
+</body>
+</html>
